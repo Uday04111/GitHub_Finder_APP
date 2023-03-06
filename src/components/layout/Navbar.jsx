@@ -38,18 +38,15 @@ function Navbar({ title }) {
 
         <div className="flex-1 px-2 py-2">
           <div className="flex justify-end">
-            <Link to="/" className="btn btn-ghost btn-sm rounded-btn">
-              Home
-            </Link>
-            <Link to="/about" className="btn btn-ghost btn-sm rounded-btn">
+            {/* <Link to="/about" className="btn btn-ghost btn-sm rounded-btn">
               About
-            </Link>
+            </Link> */}
             <select
               className="select select-ghost select-sm ml-4 bg-base-200 rounded-md"
               data-choose-theme
             >
               <option disabled value="">
-                Pick a theme
+                Theme
               </option>
               {themeValues.map((theme, index) => (
                 <option
